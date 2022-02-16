@@ -11,6 +11,7 @@
 		224A0BE527B716020040BA5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A0BE427B716020040BA5B /* ContentView.swift */; };
 		224A0BE727B716020040BA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224A0BE627B716020040BA5B /* Assets.xcassets */; };
 		224A0BEA27B716020040BA5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224A0BE927B716020040BA5B /* Preview Assets.xcassets */; };
+		224A0BF227B716440040BA5B /* LightTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A0BF127B716440040BA5B /* LightTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		224A0BE627B716020040BA5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224A0BE927B716020040BA5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		224A0BEB27B716020040BA5B /* Elgaric.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Elgaric.entitlements; sourceTree = "<group>"; };
+		224A0BF127B716440040BA5B /* LightTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTracker.swift; sourceTree = "<group>"; };
+		224A0BF327B7189F0040BA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +55,10 @@
 		224A0BE127B716020040BA5B /* Elgaric */ = {
 			isa = PBXGroup;
 			children = (
+				224A0BF327B7189F0040BA5B /* Info.plist */,
 				224A0BE227B716020040BA5B /* ElgaricApp.swift */,
 				224A0BE427B716020040BA5B /* ContentView.swift */,
+				224A0BF127B716440040BA5B /* LightTracker.swift */,
 				224A0BE627B716020040BA5B /* Assets.xcassets */,
 				224A0BEB27B716020040BA5B /* Elgaric.entitlements */,
 				224A0BE827B716020040BA5B /* Preview Content */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224A0BE527B716020040BA5B /* ContentView.swift in Sources */,
+				224A0BF227B716440040BA5B /* LightTracker.swift in Sources */,
 				224A0BE327B716020040BA5B /* ElgaricApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Elgaric/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Elgaric/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
