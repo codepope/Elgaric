@@ -34,8 +34,13 @@ class LightTracker: ObservableObject {
                         print("Sleepy")
                         sleep(1)
                     }
-                    DispatchQueue.main.async {
-                        self.lights.append(light)
+                    
+                    if(!self.lights.contains(light)) {
+                        DispatchQueue.main.async {
+                            self.lights.append(light)
+                        }
+                    } else {
+                        print("Dropped \(light)")
                     }
                     //let ai=light.fetchInfo()
                     //print("Oh \(ai!)")
@@ -68,8 +73,13 @@ struct State: Codable {
     let lights:[LightState]
 }
 
-class RestLight:Identifiable,CustomStringConvertible,ObservableObject {
+class RestLight:Identifiable,CustomStringConvertible,ObservableObject,Equatable {
     
+    static func == (lhs: RestLight, rhs: RestLight) -> Bool {
+        return (lhs.endpoint==rhs.endpoint)
+    }
+    
+
     let endpoint: NWEndpoint
     let name: String
     let description: String
